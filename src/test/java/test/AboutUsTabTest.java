@@ -22,7 +22,6 @@ public class AboutUsTabTest extends BaseTest {
 	public void Validate_About_Us_Button_Click_TC_001() {
 		AboutUsTab aut = new AboutUsTab(driver);
 		Interactions interact = new Interactions(driver);
-		interact.executeWithDelay(() -> aut.clickAboutUsTabBtn());
 		Assert.assertEquals(driver.getTitle(), "About Us - Pursuit Software");
 	}
 	

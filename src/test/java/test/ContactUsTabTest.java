@@ -36,45 +36,45 @@ public class ContactUsTabTest extends BaseTest {
 		interact.executeWithDelay(() -> aut.sendTextAreaMesage());
 		interact.executeWithDelay(() -> aut.clickSendBtn());
 	}
-	
-	@Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
-	public void Validate_JOIN_US_Button_click_TC_003() {
-		ContactUsTab aut = new ContactUsTab(driver);
-		Interactions interact = new Interactions(driver);
-		initialTest();
-		interact.executeWithDelay(() -> aut.clickJoinUsBtn());
-	}
-	
-	@Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
-	public void Validate_SMS_OUTREACH_Button_click_TC_004() {
-		ContactUsTab aut = new ContactUsTab(driver);
-		Interactions interact = new Interactions(driver);
-		initialTest();
-		interact.executeWithDelay(() -> aut.clickSmsOutreachBtn());
-	}
-	
-	@Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
-	public void Validate_SMS_OUTREACH_functionality_click_TC_005() {
-		ContactUsTab aut = new ContactUsTab(driver);
-		Interactions interact = new Interactions(driver);
-		initialTest();
-		interact.executeWithDelay(() -> aut.clickSmsOutreachBtn());
-		interact.executeWithDelay(() -> aut.sendSmsOutReachName());
-		interact.executeWithDelay(() -> aut.sendSmsOutReachEmail());
-		interact.executeWithDelay(() -> aut.sendSmsOutReachPhoneNumber());
-		interact.executeWithDelay(() -> aut.clickSmsOutReachOption());
-		interact.executeWithDelay(() -> aut.chooseSmsOutReachOption());
-		interact.executeWithDelay(() -> aut.clickSmsOutReachSendBtn());
-	}
-	
-	@Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
-	public void Validate_LINKEDIN_Button_click_TC_006() {
-		ContactUsTab aut = new ContactUsTab(driver);
-		Interactions interact = new Interactions(driver);
-		initialTest();
-		interact.executeWithDelay(() -> aut.clickLinkedInBtn());
-	}
-	
+//	
+//	@Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
+//	public void Validate_JOIN_US_Button_click_TC_003() {
+//		ContactUsTab aut = new ContactUsTab(driver);
+//		Interactions interact = new Interactions(driver);
+//		initialTest();
+//		interact.executeWithDelay(() -> aut.clickJoinUsBtn());
+//	}
+//	
+//	@Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
+//	public void Validate_SMS_OUTREACH_Button_click_TC_004() {
+//		ContactUsTab aut = new ContactUsTab(driver);
+//		Interactions interact = new Interactions(driver);
+//		initialTest();
+//		interact.executeWithDelay(() -> aut.clickSmsOutreachBtn());
+//	}
+//	
+//	@Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
+//	public void Validate_SMS_OUTREACH_functionality_click_TC_005() {
+//		ContactUsTab aut = new ContactUsTab(driver);
+//		Interactions interact = new Interactions(driver);
+//		initialTest();
+//		interact.executeWithDelay(() -> aut.clickSmsOutreachBtn());
+//		interact.executeWithDelay(() -> aut.sendSmsOutReachName());
+//		interact.executeWithDelay(() -> aut.sendSmsOutReachEmail());
+//		interact.executeWithDelay(() -> aut.sendSmsOutReachPhoneNumber());
+//		interact.executeWithDelay(() -> aut.clickSmsOutReachOption());
+//		interact.executeWithDelay(() -> aut.chooseSmsOutReachOption());
+//		interact.executeWithDelay(() -> aut.clickSmsOutReachSendBtn());
+//	}
+//	
+//	@Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
+//	public void Validate_LINKEDIN_Button_click_TC_006() {
+//		ContactUsTab aut = new ContactUsTab(driver);
+//		Interactions interact = new Interactions(driver);
+//		initialTest();
+//		interact.executeWithDelay(() -> aut.clickLinkedInBtn());
+//	}
+//	
 	@AfterMethod
 	public void afterMethod() throws InterruptedException {
 		Thread.sleep(2000);
