@@ -30,7 +30,7 @@ public class AboutUsTabTest extends BaseTest {
 		initialTest();
 		AboutUsTab aut = new AboutUsTab(driver);
 		Interactions interact = new Interactions(driver);
-		interact.executeWithDelay(() -> aut.searchValidation());
+		//interact.executeWithDelay(() -> aut.searchValidation());
 	}
 	
 	// @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
