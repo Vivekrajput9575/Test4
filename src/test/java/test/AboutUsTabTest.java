@@ -25,21 +25,21 @@ public class AboutUsTabTest extends BaseTest {
 		//Assert.assertEquals(driver.getTitle(), "About Us - Pursuit Software");
 	}
 	
-//	@Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
-//	public void Validate_Search_feature_TC_002() {
-//		initialTest();
-//		AboutUsTab aut = new AboutUsTab(driver);
-//		Interactions interact = new Interactions(driver);
-		//interact.executeWithDelay(() -> aut.searchValidation());
-//	}
+	@Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
+	public void Validate_Search_feature_TC_002() {
+		initialTest();
+		AboutUsTab aut = new AboutUsTab(driver);
+		Interactions interact = new Interactions(driver);
+		interact.executeWithDelay(() -> aut.searchValidation());
+	}
 	
-	// @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
-	// public void Validate_first_JOIN_US_button_click_TC_003() {
-	// 	initialTest();
-	// 	AboutUsTab aut = new AboutUsTab(driver);
-	// 	Interactions interact = new Interactions(driver);
-	// 	interact.executeWithDelay(() -> aut.clickFirstJoinUsBtn());
-	// }
+	 @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
+	 public void Validate_first_JOIN_US_button_click_TC_003() {
+	 	initialTest();
+	 	AboutUsTab aut = new AboutUsTab(driver);
+	 	Interactions interact = new Interactions(driver);
+	 	interact.executeWithDelay(() -> aut.clickFirstJoinUsBtn());
+	 }
 	
 	// @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
 	// public void Validate_second_JOIN_US_button_click_TC_003() {
