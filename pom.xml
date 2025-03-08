@@ -7,8 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>Testing3</name>
    <url>http://maven.apache.org</url>
-
-  <properties>
+ <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
@@ -25,16 +24,6 @@
         </plugin>
 
         <!-- Surefire Plugin for TestNG -->
-         <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.2.2</version>  <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-          <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
-        </configuration>
-      </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
@@ -106,5 +95,5 @@
       <artifactId>log4j-core</artifactId>
       <version>2.20.0</version>
     </dependency>
-    </dependencies>
+  </dependencies>
 </project>
